@@ -1,0 +1,29 @@
+@if(label) {
+<label class="font-medium block mb-1">{{ label }}:</label>
+}
+
+<div
+  class="py-1 px-2 flex items-center gap-2 border rounded-[0.5rem] bg-[#eeeeee]"
+>
+  @if(leftIcon) {
+  <div class="p-[1px] flex items-center justify-center">
+    <ng-icon class="[&>*]:leading-4" [name]="leftIcon" />
+  </div>
+  }
+
+  <input
+    nz-input
+    [placeholder]="placeholder"
+    nzSize="large"
+    [value]="inputValue()"
+    (input)="onInputEvent($event)"
+    (blur)="onBlur()"
+    class="flex-1 bg-transparent border-0 outline-none"
+  />
+
+  @if(rightIcon) {
+  <div class="p-[1px] flex items-center justify-center">
+    <ng-icon class="[&>*]:leading-4" [name]="rightIcon" />
+  </div>
+  }
+</div>

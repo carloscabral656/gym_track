@@ -1,0 +1,18 @@
+:host {
+  input[nz-input] {
+    background-color: #eeeeee !important;
+    padding: 0 !important;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: none;
+  }
+
+  input[nz-input]:focus {
+    background-color: #eeeeee !important;
+    padding: 0 !important;
+    outline: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+}
