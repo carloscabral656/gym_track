@@ -20,11 +20,14 @@
       <div class="flex flex-col gap-5">
         <gk-input leftIcon="bootstrapMailbox2" />
         <gk-input leftIcon="bootstrapKeyFill" />
-        <div>
-          <span class="text-sm underline cursor-pointer text-[#317d25]"
-            >Esqueceu e-mail ou senha?</span
-          >
-        </div>
+        <span class="text-sm underline cursor-pointer text-[#317d25]"
+          >Esqueceu e-mail ou senha?</span
+        >
+        <span
+          class="text-sm underline cursor-pointer text-[#317d25]"
+          (click)="redirectToCreateUser()"
+          >Criar conta</span
+        >
         <gk-button content="Login" />
       </div>
     </div>
