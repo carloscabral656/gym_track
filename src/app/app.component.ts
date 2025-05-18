@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzInputModule } from 'ng-zorro-antd/input';
-import { provideIcons } from '@ng-icons/core';
+import { NgIcon, provideIcons } from '@ng-icons/core';
 import {
   bootstrapPersonCircle,
   bootstrapMailbox2,
@@ -11,8 +11,11 @@ import {
   bootstrapGoogle,
   bootstrapFacebook,
   bootstrapCheckLg,
+  bootstrapHouseFill,
+  bootstrapBoxArrowLeft,
 } from '@ng-icons/bootstrap-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SideNavComponent } from './shared/components/side-nav/side-nav.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NzInputModule,
     FormsModule,
     FontAwesomeModule,
+    SideNavComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -33,6 +37,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
       bootstrapGoogle,
       bootstrapFacebook,
       bootstrapCheckLg,
+      bootstrapHouseFill,
+      bootstrapBoxArrowLeft,
     }),
   ],
 })
