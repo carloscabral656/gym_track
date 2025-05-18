@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -10,11 +10,19 @@ import {
   bootstrapKeyFill,
   bootstrapGoogle,
   bootstrapFacebook,
+  bootstrapCheckLg,
 } from '@ng-icons/bootstrap-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NzButtonModule, NzInputModule, FormsModule],
+  imports: [
+    RouterOutlet,
+    NzButtonModule,
+    NzInputModule,
+    FormsModule,
+    FontAwesomeModule,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   viewProviders: [
@@ -24,6 +32,7 @@ import {
       bootstrapKeyFill,
       bootstrapGoogle,
       bootstrapFacebook,
+      bootstrapCheckLg,
     }),
   ],
 })
